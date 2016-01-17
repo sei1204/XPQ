@@ -12,6 +12,15 @@
 		27AAC6AB1C4B669400AA9EDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27AAC6A91C4B669400AA9EDB /* Main.storyboard */; };
 		27AAC6AD1C4B669400AA9EDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27AAC6AC1C4B669400AA9EDB /* Assets.xcassets */; };
 		27AAC6B01C4B669400AA9EDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27AAC6AE1C4B669400AA9EDB /* LaunchScreen.storyboard */; };
+		27AAC6C01C4B791200AA9EDB /* appimageView画像　coin.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AAC6BF1C4B791200AA9EDB /* appimageView画像　coin.png */; };
+		27AAC6D11C4B793700AA9EDB /* appimageView画像２-score.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AAC6D01C4B793700AA9EDB /* appimageView画像２-score.png */; };
+		27AAC6DC1C4B801D00AA9EDB /* appimageView画像--XPQA.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27AAC6D51C4B801D00AA9EDB /* appimageView画像--XPQA.jpg */; };
+		27AAC6DD1C4B801D00AA9EDB /* appimageView画像　coin.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AAC6D61C4B801D00AA9EDB /* appimageView画像　coin.png */; };
+		27AAC6DE1C4B801D00AA9EDB /* appimageView画像２-score.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AAC6D71C4B801D00AA9EDB /* appimageView画像２-score.png */; };
+		27AAC6DF1C4B801D00AA9EDB /* アプリボタンデザイン.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27AAC6D81C4B801D00AA9EDB /* アプリボタンデザイン.jpg */; };
+		27AAC6E01C4B801D00AA9EDB /* アプリ文字ボタン.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27AAC6D91C4B801D00AA9EDB /* アプリ文字ボタン.jpg */; };
+		27AAC6E11C4B801D00AA9EDB /* デザイン１テスト.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27AAC6DA1C4B801D00AA9EDB /* デザイン１テスト.jpg */; };
+		27AAC6E21C4B801D00AA9EDB /* 顔文字.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27AAC6DB1C4B801D00AA9EDB /* 顔文字.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +31,15 @@
 		27AAC6AC1C4B669400AA9EDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27AAC6AF1C4B669400AA9EDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27AAC6B11C4B669400AA9EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27AAC6BF1C4B791200AA9EDB /* appimageView画像　coin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appimageView画像　coin.png"; sourceTree = "<group>"; };
+		27AAC6D01C4B793700AA9EDB /* appimageView画像２-score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appimageView画像２-score.png"; sourceTree = "<group>"; };
+		27AAC6D51C4B801D00AA9EDB /* appimageView画像--XPQA.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "appimageView画像--XPQA.jpg"; sourceTree = "<group>"; };
+		27AAC6D61C4B801D00AA9EDB /* appimageView画像　coin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appimageView画像　coin.png"; sourceTree = "<group>"; };
+		27AAC6D71C4B801D00AA9EDB /* appimageView画像２-score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appimageView画像２-score.png"; sourceTree = "<group>"; };
+		27AAC6D81C4B801D00AA9EDB /* アプリボタンデザイン.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "アプリボタンデザイン.jpg"; sourceTree = "<group>"; };
+		27AAC6D91C4B801D00AA9EDB /* アプリ文字ボタン.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "アプリ文字ボタン.jpg"; sourceTree = "<group>"; };
+		27AAC6DA1C4B801D00AA9EDB /* デザイン１テスト.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "デザイン１テスト.jpg"; sourceTree = "<group>"; };
+		27AAC6DB1C4B801D00AA9EDB /* 顔文字.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "顔文字.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,9 @@
 		27AAC6A41C4B669400AA9EDB /* XPQ */ = {
 			isa = PBXGroup;
 			children = (
+				27AAC6D41C4B801D00AA9EDB /* XPQ画像 */,
+				27AAC6D01C4B793700AA9EDB /* appimageView画像２-score.png */,
+				27AAC6BF1C4B791200AA9EDB /* appimageView画像　coin.png */,
 				27AAC6A51C4B669400AA9EDB /* AppDelegate.swift */,
 				27AAC6A71C4B669400AA9EDB /* ViewController.swift */,
 				27AAC6A91C4B669400AA9EDB /* Main.storyboard */,
@@ -62,6 +83,20 @@
 				27AAC6B11C4B669400AA9EDB /* Info.plist */,
 			);
 			path = XPQ;
+			sourceTree = "<group>";
+		};
+		27AAC6D41C4B801D00AA9EDB /* XPQ画像 */ = {
+			isa = PBXGroup;
+			children = (
+				27AAC6D51C4B801D00AA9EDB /* appimageView画像--XPQA.jpg */,
+				27AAC6D61C4B801D00AA9EDB /* appimageView画像　coin.png */,
+				27AAC6D71C4B801D00AA9EDB /* appimageView画像２-score.png */,
+				27AAC6D81C4B801D00AA9EDB /* アプリボタンデザイン.jpg */,
+				27AAC6D91C4B801D00AA9EDB /* アプリ文字ボタン.jpg */,
+				27AAC6DA1C4B801D00AA9EDB /* デザイン１テスト.jpg */,
+				27AAC6DB1C4B801D00AA9EDB /* 顔文字.jpg */,
+			);
+			path = "XPQ画像";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +158,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27AAC6E21C4B801D00AA9EDB /* 顔文字.jpg in Resources */,
+				27AAC6DF1C4B801D00AA9EDB /* アプリボタンデザイン.jpg in Resources */,
+				27AAC6DE1C4B801D00AA9EDB /* appimageView画像２-score.png in Resources */,
+				27AAC6E01C4B801D00AA9EDB /* アプリ文字ボタン.jpg in Resources */,
+				27AAC6E11C4B801D00AA9EDB /* デザイン１テスト.jpg in Resources */,
+				27AAC6C01C4B791200AA9EDB /* appimageView画像　coin.png in Resources */,
 				27AAC6B01C4B669400AA9EDB /* LaunchScreen.storyboard in Resources */,
 				27AAC6AD1C4B669400AA9EDB /* Assets.xcassets in Resources */,
+				27AAC6D11C4B793700AA9EDB /* appimageView画像２-score.png in Resources */,
+				27AAC6DD1C4B801D00AA9EDB /* appimageView画像　coin.png in Resources */,
+				27AAC6DC1C4B801D00AA9EDB /* appimageView画像--XPQA.jpg in Resources */,
 				27AAC6AB1C4B669400AA9EDB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +296,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hijiki.XPQ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -263,6 +308,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hijiki.XPQ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
