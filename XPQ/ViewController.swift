@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         whiteSwitch.on = false
         
     }
-     
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -44,6 +44,7 @@ class ViewController: UIViewController {
         view.backgroundColor = UIColor.redColor()
         
     }
+    
     
     @IBAction func yellowOn() {
         view.backgroundColor = UIColor.yellowColor()

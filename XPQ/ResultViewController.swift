@@ -28,6 +28,7 @@ class ResultViewController: UIViewController {
     
     @IBAction func Back() {
         self.presentingViewController?.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+        print("Back!")
     }
     
     
