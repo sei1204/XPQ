@@ -13,9 +13,9 @@ class GameViewController: UIViewController, UITextFieldDelegate {
     //コインとスコアの変数
     var coins: Int = 0
     var score: Int = 0
-    var nokorimondai: Int = 0
+    var nokorimondai: Int!
     var seikaisu: Int = 0
-    var nokorijikan: Int = 0
+    var nokorijikan: Int!
     
     var nokorijikantimer = NSTimer()
     
@@ -35,10 +35,10 @@ class GameViewController: UIViewController, UITextFieldDelegate {
     
     
     //問題配列
-    var mondaiArray:[String] = ["Xcodeの言語「Swift』はいつ発表されたか?","Swiftでの変数提供のプログラムを書きなさい（変数名はnumber)(型はInt)","Swiftの意味を書きなさい","Swiftでのlabelの部品提供のプログラムを書きなさい。（名前はlabel）","クラスとは何？","乱数を発生させるプログラムを書きなさい。(乱数名はransu)（型変換も）","コンソールに結果を出力したい時、print文とあともう一つは？","プログラムで数はどこから数え始める？","実機でテストする時、必要なプログラムは？","Xcodeでの名前の書き方をなんという？"]
+    var mondaiArray:[String] = ["Xcodeの言語「Swift』はいつ発表されたか?","Swiftでの変数提供のプログラムを書きなさい（変数名はnumber、型はInt、値は指定しなくて良い）","Swiftの意味を書きなさい","Swiftでのlabelの部品提供のプログラムを書きなさい。（名前はlabel）","クラスとは何？","乱数を発生させるプログラムを書きなさい。(乱数名はransu)（型変換も）","コンソールに結果を出力したい時、print文とあともう一つは？","プログラムで数はどこから数え始める？","実機でテストする時、必要なプログラムは？","Xcodeでの名前の書き方をなんという？"]
     
     //答え配列
-    var kotaeArray:[String] = ["２０１４年６月２日","var number: Int = 0","アマツバメ","@IBOutlet var label: UIlabel!","オブジェクトの設計図","arc4random_uniform","NSLog","０","Apple Developer program","キャメルケース"]
+    var kotaeArray:[String] = ["二千十四年六月二日","var number: Int!","アマツバメ","@IBOutlet var label: UIlabel!","オブジェクトの設計図","arc4random_uniform","NSLog","ゼロ","Apple Developer program","キャメルケース"]
     
     //添え字をゼロに
     var index: Int = 0
@@ -48,20 +48,27 @@ class GameViewController: UIViewController, UITextFieldDelegate {
         
         // Do any additional setup after loading the view.
         
+        nokorijikan = 120
+        nokorimondai = 10
+        
         kotaeTextField.delegate = self
         
-        if !nokorijikantimer.valid {
-            nokorijikantimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("down"), userInfo: nil, repeats: true)
-            
-            print("start!")
-        }
-        nokorijikan = 60
+        
+        nokorijikantimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("down"), userInfo: nil, repeats: true)
+        print("start!")
         nokorijikanLabel.text = String(nokorijikan)
-    }
+        mondaiTextView.text = mondaiArray[index]
+            }
     
     func down() {
         nokorijikan =  nokorijikan - 1
         nokorijikanLabel.text = String(nokorijikan)
+        //nokorizikantimerの値が0になったら次の画面へ行く
+        if nokorijikantimer == 0 {
+            self.performSegueToResult()
+            print("GAMEOVER..")
+            nokorijikantimer.invalidate()
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -70,23 +77,38 @@ class GameViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func hantei() {
-        //配列の要素を追加していく
-        mondaiTextView.text = mondaiArray[index]
         
-        //正解かどうか判定する
-        
+        hantei(kotaeTextField.text!, mondaiNum: index)
         
         //indexの値を+1する
         index = index + 1
-        print("plus_1!")
+        print(index)
         
-        //値が9より多くなったら次の画面へ行く
-        if index > 9 {
+        
+        //残り問題を-1する
+        nokorimondai = nokorimondai - 1
+        nokorimondaiLabel.text = String(nokorimondai)
+        print(nokorimondai)
+        
+        
+        //コインを1個増やす
+        coins = coins + 1
+        coinLabel.text = String(coins)
+        print(coins)
+        
+        //スコアを1増やす
+        score = score + 1
+        scoreLabel.text = String(score)
+        print(score)
+        
+        
+        //indexの値が10になったら次の画面へ行く
+        if index < 10 {
+            mondaiTextView.text = mondaiArray[index]
+        }else {
             self.performSegueToResult()
             print("stop!")
             nokorijikantimer.invalidate()
-            nokorijikan = 60
-            nokorijikanLabel.text = String(nokorijikan)
         }
     }
     
@@ -97,6 +119,32 @@ class GameViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+        //nokorizikantimerの値が0になったら次の画面へ行く
+        if nokorijikantimer == 0 {
+            self.performSegueToResult()
+            print("GAMEOVER..")
+            nokorijikantimer.invalidate()
+        }
+    }
+    
+    func hantei(userkaito: String, mondaiNum: Int) {
+        if userkaito == kotaeArray[mondaiNum] {
+           resultLabel.text = "正解！"
+           seikaisu = seikaisu + 1
+            
+        }else{
+            resultLabel.text = "不正解！"
+            
+        }
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let resultViewController = segue.destinationViewController as! ResultViewController
+        
+        resultViewController.coins = self.coins
+        resultViewController.score = self.score
     }
     
     

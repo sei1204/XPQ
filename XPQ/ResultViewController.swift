@@ -14,13 +14,17 @@ class ResultViewController: UIViewController {
     @IBOutlet var scoreLabel: UILabel!
     @IBOutlet var resultLabel: UILabel!
     
+    var coins: Int!
+    var score: Int!
+    var result: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view.
+        coinLabel.text = String(coins)
+        scoreLabel.text = String(score)
         
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
