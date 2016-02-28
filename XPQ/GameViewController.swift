@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class GameViewController: UIViewController, UITextFieldDelegate {
     
@@ -40,6 +41,13 @@ class GameViewController: UIViewController, UITextFieldDelegate {
     //答え配列
     var kotaeArray:[String] = ["二千十四年六月二日","var number: Int!","アマツバメ","@IBOutlet var label: UIlabel!","オブジェクトの設計図","arc4random_uniform","NSLog","ゼロ","Apple Developer program","キャメルケース"]
     
+    //曲のファイル名を入れるための配列
+    var fileNameArray = [String]()
+    
+    //音楽を再生するための変数
+    var audioPlayer: AVAudioPlayer!
+    
+    
     //添え字をゼロに
     var index: Int = 0
     
@@ -64,11 +72,14 @@ class GameViewController: UIViewController, UITextFieldDelegate {
         nokorijikan =  nokorijikan - 1
         nokorijikanLabel.text = String(nokorijikan)
         //nokorizikantimerの値が0になったら次の画面へ行く
-        if nokorijikantimer == 0 {
+        if nokorijikan == 0 {
             self.performSegueToResult()
             print("GAMEOVER..")
             nokorijikantimer.invalidate()
         }
+        
+        //fileNameArrayに曲のファイル名を入れていく
+        fileNameArray = ["不正解音", "金"]
     }
     
     override func didReceiveMemoryWarning() {
@@ -90,18 +101,6 @@ class GameViewController: UIViewController, UITextFieldDelegate {
         nokorimondaiLabel.text = String(nokorimondai)
         print(nokorimondai)
         
-        
-        //コインを1個増やす
-        coins = coins + 1
-        coinLabel.text = String(coins)
-        print(coins)
-        
-        //スコアを1増やす
-        score = score + 1
-        scoreLabel.text = String(score)
-        print(score)
-        
-        
         //indexの値が10になったら次の画面へ行く
         if index < 10 {
             mondaiTextView.text = mondaiArray[index]
@@ -118,23 +117,47 @@ class GameViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
-        return true
-        //nokorizikantimerの値が0になったら次の画面へ行く
-        if nokorijikantimer == 0 {
-            self.performSegueToResult()
-            print("GAMEOVER..")
-            nokorijikantimer.invalidate()
-        }
-    }
+        
     
+        
+        return true
+    
+}
+
     func hantei(userkaito: String, mondaiNum: Int) {
         if userkaito == kotaeArray[mondaiNum] {
            resultLabel.text = "正解！"
            seikaisu = seikaisu + 1
             
+            //コインを1個増やす
+            coins = coins + 1
+            coinLabel.text = String(coins)
+            print(coins)
+            
+            
+            //スコアを1増やす
+            score = score + 1
+            scoreLabel.text = String(score)
+            print(score)
+            
+            
+            let audioPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource(fileNameArray[1], ofType: "mp3")!)
+            do{
+                audioPlayer = try! AVAudioPlayer(contentsOfURL: audioPath)
+                audioPlayer.prepareToPlay()
+            }
+
+            audioPlayer.play()
+            
         }else{
             resultLabel.text = "不正解！"
+            let audioPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource(fileNameArray[0], ofType: "mp3")!)
+            do{
+                audioPlayer = try! AVAudioPlayer(contentsOfURL: audioPath)
+                audioPlayer.prepareToPlay()
+            }
             
+            audioPlayer.play()
         }
         
     }

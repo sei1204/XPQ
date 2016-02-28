@@ -17,6 +17,15 @@
 		276F646F1C5DC58100EA0E07 /* appimageView画像２-score.png in Resources */ = {isa = PBXBuildFile; fileRef = 276F64671C5DC58100EA0E07 /* appimageView画像２-score.png */; };
 		276F64711C5DCED500EA0E07 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276F64701C5DCED500EA0E07 /* GameViewController.swift */; };
 		276F64731C5DCEF700EA0E07 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276F64721C5DCEF700EA0E07 /* ResultViewController.swift */; };
+		278656591C829143008C6F5D /* madamadane.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2786564D1C829143008C6F5D /* madamadane.mp3 */; };
+		2786565A1C829143008C6F5D /* mousukosi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2786564E1C829143008C6F5D /* mousukosi.mp3 */; };
+		2786565B1C829143008C6F5D /* syuryo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2786564F1C829143008C6F5D /* syuryo.mp3 */; };
+		2786565C1C829143008C6F5D /* yoxsya.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 278656501C829143008C6F5D /* yoxsya.mp3 */; };
+		278656621C829143008C6F5D /* 不正解音.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 278656571C829143008C6F5D /* 不正解音.mp3 */; };
+		278656631C829143008C6F5D /* 金.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 278656581C829143008C6F5D /* 金.mp3 */; };
+		278656651C8292B5008C6F5D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 278656641C8292B5008C6F5D /* AVFoundation.framework */; };
+		2786566B1C82C509008C6F5D /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2786566A1C82C509008C6F5D /* icon.png */; };
+		27A2D5B41C734F570008E908 /* Xcode_Setumei_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2D5B31C734F570008E908 /* Xcode_Setumei_ViewController.swift */; };
 		27AAC6A61C4B669400AA9EDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AAC6A51C4B669400AA9EDB /* AppDelegate.swift */; };
 		27AAC6A81C4B669400AA9EDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AAC6A71C4B669400AA9EDB /* ViewController.swift */; };
 		27AAC6AB1C4B669400AA9EDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27AAC6A91C4B669400AA9EDB /* Main.storyboard */; };
@@ -35,6 +44,15 @@
 		276F64671C5DC58100EA0E07 /* appimageView画像２-score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appimageView画像２-score.png"; sourceTree = "<group>"; };
 		276F64701C5DCED500EA0E07 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		276F64721C5DCEF700EA0E07 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		2786564D1C829143008C6F5D /* madamadane.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = madamadane.mp3; sourceTree = "<group>"; };
+		2786564E1C829143008C6F5D /* mousukosi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mousukosi.mp3; sourceTree = "<group>"; };
+		2786564F1C829143008C6F5D /* syuryo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = syuryo.mp3; sourceTree = "<group>"; };
+		278656501C829143008C6F5D /* yoxsya.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yoxsya.mp3; sourceTree = "<group>"; };
+		278656571C829143008C6F5D /* 不正解音.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "不正解音.mp3"; sourceTree = "<group>"; };
+		278656581C829143008C6F5D /* 金.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "金.mp3"; sourceTree = "<group>"; };
+		278656641C8292B5008C6F5D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2786566A1C82C509008C6F5D /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		27A2D5B31C734F570008E908 /* Xcode_Setumei_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Xcode_Setumei_ViewController.swift; sourceTree = "<group>"; };
 		27AAC6A21C4B669400AA9EDB /* XPQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27AAC6A51C4B669400AA9EDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27AAC6A71C4B669400AA9EDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				278656651C8292B5008C6F5D /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,9 +113,24 @@
 			path = "画像";
 			sourceTree = "<group>";
 		};
+		2786564C1C829143008C6F5D /* XPQ効果音 */ = {
+			isa = PBXGroup;
+			children = (
+				2786564D1C829143008C6F5D /* madamadane.mp3 */,
+				2786564E1C829143008C6F5D /* mousukosi.mp3 */,
+				2786564F1C829143008C6F5D /* syuryo.mp3 */,
+				278656501C829143008C6F5D /* yoxsya.mp3 */,
+				278656571C829143008C6F5D /* 不正解音.mp3 */,
+				278656581C829143008C6F5D /* 金.mp3 */,
+			);
+			path = "XPQ効果音";
+			sourceTree = "<group>";
+		};
 		27AAC6991C4B669400AA9EDB = {
 			isa = PBXGroup;
 			children = (
+				2786566A1C82C509008C6F5D /* icon.png */,
+				278656641C8292B5008C6F5D /* AVFoundation.framework */,
 				27AAC6A41C4B669400AA9EDB /* XPQ */,
 				27AAC6A31C4B669400AA9EDB /* Products */,
 			);
@@ -113,6 +147,7 @@
 		27AAC6A41C4B669400AA9EDB /* XPQ */ = {
 			isa = PBXGroup;
 			children = (
+				2786564C1C829143008C6F5D /* XPQ効果音 */,
 				276F645C1C5DC58100EA0E07 /* XPQ画像 */,
 				27AAC6A91C4B669400AA9EDB /* Main.storyboard */,
 				27AAC6A51C4B669400AA9EDB /* AppDelegate.swift */,
@@ -122,6 +157,7 @@
 				27AAC6AC1C4B669400AA9EDB /* Assets.xcassets */,
 				27AAC6AE1C4B669400AA9EDB /* LaunchScreen.storyboard */,
 				27AAC6B11C4B669400AA9EDB /* Info.plist */,
+				27A2D5B31C734F570008E908 /* Xcode_Setumei_ViewController.swift */,
 			);
 			path = XPQ;
 			sourceTree = "<group>";
@@ -185,16 +221,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				278656631C829143008C6F5D /* 金.mp3 in Resources */,
 				276F646D1C5DC58100EA0E07 /* appデザインX.jpg in Resources */,
+				2786566B1C82C509008C6F5D /* icon.png in Resources */,
 				276F646B1C5DC58100EA0E07 /* appデザインP.jpg in Resources */,
 				27AAC6B01C4B669400AA9EDB /* LaunchScreen.storyboard in Resources */,
+				2786565B1C829143008C6F5D /* syuryo.mp3 in Resources */,
+				2786565A1C829143008C6F5D /* mousukosi.mp3 in Resources */,
 				276F646F1C5DC58100EA0E07 /* appimageView画像２-score.png in Resources */,
+				278656621C829143008C6F5D /* 不正解音.mp3 in Resources */,
 				276F64691C5DC58100EA0E07 /* ボタンデザイン２.jpg in Resources */,
 				276F646E1C5DC58100EA0E07 /* appimageView画像　coin.png in Resources */,
 				276F646C1C5DC58100EA0E07 /* appデザインQ.jpg in Resources */,
 				27AAC6AD1C4B669400AA9EDB /* Assets.xcassets in Resources */,
 				27AAC6AB1C4B669400AA9EDB /* Main.storyboard in Resources */,
+				278656591C829143008C6F5D /* madamadane.mp3 in Resources */,
 				276F64681C5DC58100EA0E07 /* ボタンデザイン.jpg in Resources */,
+				2786565C1C829143008C6F5D /* yoxsya.mp3 in Resources */,
 				276F646A1C5DC58100EA0E07 /* appデザインA.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27AAC6A81C4B669400AA9EDB /* ViewController.swift in Sources */,
+				27A2D5B41C734F570008E908 /* Xcode_Setumei_ViewController.swift in Sources */,
 				276F64711C5DCED500EA0E07 /* GameViewController.swift in Sources */,
 				27AAC6A61C4B669400AA9EDB /* AppDelegate.swift in Sources */,
 				276F64731C5DCEF700EA0E07 /* ResultViewController.swift in Sources */,
@@ -319,8 +363,9 @@
 		27AAC6B51C4B669400AA9EDB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = XPQ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hijiki.XPQ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -331,8 +376,9 @@
 		27AAC6B61C4B669400AA9EDB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = XPQ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hijiki.XPQ;
 				PRODUCT_NAME = "$(TARGET_NAME)";

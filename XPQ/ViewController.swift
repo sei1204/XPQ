@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var yellowSwitch: UISwitch!
     @IBOutlet weak var greenSwitch: UISwitch!
     @IBOutlet weak var blueSwitch: UISwitch!
-    @IBOutlet weak var blackSwitch: UISwitch!
+    @IBOutlet weak var mazentaSwitch: UISwitch!
     @IBOutlet weak var whiteSwitch: UISwitch!
     
     @IBOutlet var aboutXcodeButton: UIButton!
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         yellowSwitch.on = false
         greenSwitch.on = false
         blueSwitch.on = false
-        blackSwitch.on = false
+        mazentaSwitch.on = false
         whiteSwitch.on = false
         
     }
@@ -42,33 +42,47 @@ class ViewController: UIViewController {
     
     @IBAction func redOn() {
         view.backgroundColor = UIColor.redColor()
-        
+        if redSwitch.on == false {
+            view.backgroundColor = UIColor.blackColor()
+        }
     }
     
     
     @IBAction func yellowOn() {
         view.backgroundColor = UIColor.yellowColor()
-        
+        if yellowSwitch.on == false {
+            view.backgroundColor = UIColor.blackColor()
+        }
     }
     
     @IBAction func greenOn() {
         view.backgroundColor = UIColor.greenColor()
-        
+        if greenSwitch.on == false {
+            view.backgroundColor = UIColor.blackColor()
+        }
     }
     
     @IBAction func blueOn() {
         view.backgroundColor = UIColor.blueColor()
-        
-    }
-    
-    @IBAction func blackOn() {
-        view.backgroundColor = UIColor.blackColor()
+        if blueSwitch.on == false {
+            view.backgroundColor = UIColor.blackColor()
+        }
         
     }
     
     @IBAction func whiteOn() {
         view.backgroundColor = UIColor.whiteColor()
+        if whiteSwitch.on == false {
+            view.backgroundColor = UIColor.blackColor()
+        }
         
+    }
+    
+    @IBAction func mazentaOn() {
+        view.backgroundColor = UIColor.magentaColor()
+        if mazentaSwitch.on == false {
+            view.backgroundColor = UIColor.blackColor()
+        }
     }
     
 }
