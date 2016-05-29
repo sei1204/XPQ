@@ -13,7 +13,8 @@ class ResultViewController: UIViewController {
     
     @IBOutlet var coinLabel: UILabel!
     @IBOutlet var scoreLabel: UILabel!
-    @IBOutlet var resultLabel: UILabel!
+    @IBOutlet var coinsResultLabel: UILabel!
+    @IBOutlet var scoreResultLabel: UILabel!
     
     var coins: Int!
     var score: Int!
@@ -41,7 +42,8 @@ class ResultViewController: UIViewController {
         
         audioPlayer.play()
         
-        
+        coinsResultLabel.text = self.coinsHantei(coins)
+        scoreResultLabel.text = self.scoreHantei(score)
         
     }
     
@@ -49,6 +51,31 @@ class ResultViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func coinsHantei(coins: Int) -> String {
+        if coins > 28 && coins < 30 {
+            return "いいねぇ〜( ^ω^ )"
+        }else if coins > 25 && coins < 27 {
+            return "後もう少し！(´Д` )"
+        }else if coins > 22 && coins < 24 {
+            return "まだまだだね！( *｀ω´)"
+        }else {
+            return "もう少し勉強してね(T ^ T)"
+        }
+    }
+    
+    func scoreHantei(score: Int) -> String {
+        if score > 28 && score < 30 {
+            return "いいねぇ〜( ^ω^ )"
+        }else if score > 25 && score < 27 {
+            return "後もう少し！(´Д` )"
+        }else if score > 22 && score < 24 {
+            return "まだまだだね！( *｀ω´)"
+        }else {
+            return "もう少し勉強してね(T ^ T)"
+        }
+        
     }
     
     @IBAction func Back() {
